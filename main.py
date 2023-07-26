@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 maxPostId = 0
 maxRequestId = 0
+maxEventId = 0
 
 
 def get_json_content(file_name):
@@ -22,6 +23,38 @@ def get_posts_by_id(uid):
     posts = []
     for post in table:
         if post.get("businessId") == uid:
+            posts.append(post)
+    return posts
+
+
+def get_events_by_organizer_id(uid):
+    table = get_json_content("events.json")
+    if len(table) == 0:
+        return []
+    posts = []
+    for post in table:
+        if post.get("organizerId") == uid:
+            posts.append(post)
+    return posts
+
+
+def get_all_events():
+    table = get_json_content("events.json")
+    if len(table) == 0:
+        return []
+    posts = []
+    for post in table:
+        posts.append(post)
+    return posts
+
+
+def get_post_by_id(id):
+    table = get_json_content("posts.json")
+    if len(table) == 0:
+        return []
+    posts = []
+    for post in table:
+        if post.get("id") == id:
             posts.append(post)
     return posts
 
@@ -42,12 +75,47 @@ def get_max_post_id():
             maxPostId = currentId
 
 
+def get_max_event_id():
+    global maxEventId
+    table = get_json_content("events.json")
+    for post in table:
+        currentId = int(post.get("id"))
+        if currentId > maxEventId:
+            maxEventId = currentId
+
+
+def generatePostId():
+    get_max_post_id()
+    return maxPostId + 1
+
+
+def generateEventId():
+    get_max_event_id()
+    return maxEventId + 1
+
+
+@app.get('/posts')
+def get_all_posts_all():
+    posts = get_all_posts_from_json()
+    if len(posts) == 0:
+        return json.dumps([])
+    return json.dumps(posts)
+
+
 @app.get('/posts/<businessId>')
 def get_all_posts(businessId):
     posts = get_posts_by_id(businessId)
     if len(posts) == 0:
         return json.dumps([])
     return json.dumps(posts)
+
+
+@app.get('/post/<id>')
+def get_post_by_id(id):
+    posts = get_posts_by_id(id)
+    if len(posts) == 0:
+        return json.dumps({})
+    return json.dumps(posts[0])
 
 
 def existsPost(postId):
@@ -65,11 +133,19 @@ def add_post():
     # print(post.get("description"))
     posts = get_all_posts_from_json()
     if not existsPost(post.get("id")):
-        posts.append(post)
+        id = generatePostId()
+        new_post = {"id": id,
+                    "businessId": post.get("businessId"),
+                    "title": post.get("title"),
+                    "description": post.get("description"),
+                    "price": post.get("price"),
+                    "images": post.get("images"),
+                    "rating": post.get("rating")}
+        posts.append(new_post)
     # print(posts)
     with open("posts.json", 'w') as f:
         json.dump(posts, f)
-    return json.dumps(post)
+    return json.dumps(new_post)
 
 
 @app.delete('/post/<id>')
@@ -102,7 +178,8 @@ def update_post(id):
                             "title": str(updated_title),
                             "description": str(updated_description),
                             "price": int(updated_price),
-                            "photos": photos}
+                            "images": photos,
+                            "rating": post.get("rating")}
             posts[i] = updated_post
             print(updated_post)
             break
@@ -292,8 +369,8 @@ def get_all_businesses_from_json():
     return requests
 
 
-@app.get('/businesses')
-def get_all_businesses(clientId):
+@app.get('/business')
+def get_all_businesses():
     businesses = get_all_businesses_from_json()
     if len(businesses) == 0:
         return json.dumps([])
@@ -310,6 +387,7 @@ def get_business_by_id(id):
             return json.dumps(business)
     return json.dumps({})
 
+
 @app.get('/business/type/<type>')
 def get_businesses_by_type(type):
     businesses = get_all_businesses_from_json()
@@ -317,7 +395,7 @@ def get_businesses_by_type(type):
     if len(businesses) == 0:
         return json.dumps([])
     for business in businesses:
-        if business.get("type") == str(type):
+        if business.get("businessType") == str(type):
             b.append(business)
     return json.dumps(b)
 
@@ -352,6 +430,72 @@ def delete_business(id):
     with open("businesses.json", 'w') as f:
         json.dump(businesses, f)
     return json.dumps(deleted_business)
+
+
+# EVENT METHODS
+@app.get('/events/<id>')
+def get_events_by_organizer(id):
+    events = get_events_by_organizer_id(id)
+    if len(events) == 0:
+        return json.dumps([])
+    return json.dumps(events)
+
+
+@app.get('/event/<id>')
+def get_event_by_id(id):
+    events = get_all_events()
+    if len(events) == 0:
+        return json.dumps({})
+    for event in events:
+        if event.get("id") == id:
+            return json.dumps(event)
+    return json.dumps({})
+
+
+@app.get('/events')
+def get_events():
+    events = get_all_events()
+    if len(events) == 0:
+        return json.dumps([])
+    return json.dumps(events)
+
+
+def existsEvent(id):
+    events = get_all_events()
+    for event in events:
+        if event.get("id") == id:
+            return True
+    return False
+
+
+@app.post('/event')
+def add_event():
+    event = request.json
+    # print(post)
+    # print(post.get("description"))
+    events = get_all_events()
+    if not existsEvent(event.get("id")):
+        id = generateEventId()
+        print(event)
+        new_event = {
+            "id": id,
+            "organizerId": event.get("organizerId"),
+            "type": event.get("type"),
+            "name": event.get("name"),
+            "description": event.get("description"),
+            "guestNumber": event.get("guestNumber"),
+            "budget": event.get("budget"),
+            "date": event.get("date"),
+            "time": event.get("time"),
+            "vendors": event.get("vendors"),
+            "cost": event.get("cost"),
+            "status": event.get("status")
+        }
+        events.append(new_event)
+    # print(posts)
+    with open("events.json", 'w') as f:
+        json.dump(events, f)
+    return json.dumps(new_event)
 
 
 if __name__ == '__main__':

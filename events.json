@@ -1,0 +1,166 @@
+[
+  {
+    "id": 1,
+    "type": "Wedding",
+    "name": "A+B's wedding",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "cost": 0,
+    "date": "2023-07-22",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Upcoming",
+    "time": "12:00"
+  },
+  {
+    "id": 2,
+    "type": "Wedding",
+    "name": "A+C's wedding",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "date": "2023-07-03",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Past",
+    "time": "12:00",
+    "cost": 0
+  },
+  {
+    "id": 3,
+    "type": "Wedding",
+    "name": "A+D's wedding",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "date": "2023-08-22",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Upcoming",
+    "time": "12:00",
+    "cost": 0
+  },
+  {
+    "id": 4,
+    "type": "Wedding",
+    "name": "A+E's wedding",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "date": "2023-04-22",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Past",
+    "time": "12:00",
+    "cost": 0
+  },
+  {
+    "id": 5,
+    "type": "Birthday",
+    "name": "Gina's 2nd birthday",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "date": "2023-08-03",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Upcoming",
+    "time": "12:00",
+    "cost": 0
+  },
+  {
+    "id": 6,
+    "type": "Baptism",
+    "name": "Alex's Baptism",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "date": "2023-07-21",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Upcoming",
+    "time": "14:20",
+    "cost": 0
+  },
+  {
+    "id": 7,
+    "type": "Party",
+    "name": "A+G's awesome beautiful wedding",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "date": "2023-07-21",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Upcoming",
+    "time": "13:30",
+    "cost": 5000
+  },
+  {
+    "id": 8,
+    "type": "Wedding",
+    "name": "A+H's wedding",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "date": "2023-07-21",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Upcoming",
+    "time": "16:00",
+    "cost": 2000
+  },
+  {
+    "id": 9,
+    "type": "Wedding",
+    "name": "A+I's wedding",
+    "description": "",
+    "guestNumber": 200,
+    "budget": 3000,
+    "date": "2023-07-24",
+    "vendors": {
+      "PhotoVideo": 1
+    },
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "status": "Upcoming",
+    "time": "16:50",
+    "cost": 1000
+  },
+  {
+    "id": 10,
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "type": "Corporate",
+    "name": "EventSpace Party",
+    "description": "Aaaaaaaaaaaaaaaaaaaaaaaaddddddddddd",
+    "guestNumber": 222,
+    "budget": 2222,
+    "date": "2023-08-15",
+    "time": "16:00",
+    "vendors": {
+      "Venue": 1,
+      "PhotoVideo": -1,
+      "CakeShop": -1,
+      "Musician": 2,
+      "Florist": -1
+    },
+    "cost": 0,
+    "status": "Planning"
+  }
+]

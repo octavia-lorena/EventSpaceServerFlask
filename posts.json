@@ -10,7 +10,10 @@
       "https://i.pinimg.com/originals/65/bb/23/65bb2331123216bedf5d361f6c05f581.jpg",
       "https://i.pinimg.com/originals/65/bb/23/65bb2331123216bedf5d361f6c05f581.jpg"
     ],
-    "rating": 4.5
+    "rating": {
+      "value": "4.5",
+      "voterCount": "3"
+    }
   },
   {
     "id": 2,
@@ -21,7 +24,10 @@
     "images": [
       "https://assets.alicestable.com/Pink_Peony_Wedding_Bouquet1.jpg"
     ],
-    "rating": 2.4
+    "rating": {
+      "value": "4.5",
+      "voterCount": "3"
+    }
   },
   {
     "id": 3,
@@ -32,7 +38,10 @@
     "images": [
       "https://assets.alicestable.com/Pink_Peony_Wedding_Bouquet1.jpg"
     ],
-    "rating": 2.4
+    "rating": {
+      "value": "4.5",
+      "voterCount": "3"
+    }
   },
   {
     "id": 4,
@@ -43,7 +52,10 @@
     "images": [
       "content://com.android.providers.media.documents/document/image%3A35"
     ],
-    "rating": 4.3
+    "rating": {
+      "value": "4.375",
+      "voterCount": "4"
+    }
   },
   {
     "id": 5,
@@ -54,6 +66,23 @@
     "images": [
       "content://com.android.providers.media.documents/document/image%3A35"
     ],
-    "rating": 4.1
+    "rating": {
+      "value": "4.5",
+      "voterCount": "3"
+    }
+  },
+  {
+    "id": 6,
+    "businessId": "SrjjuuIevANOmCBvDPQhFe5MnJo2",
+    "title": "Test Post3",
+    "description": "Test2 description long blabla",
+    "price": 111,
+    "images": [
+      "content://com.android.providers.media.documents/document/image%3A35"
+    ],
+    "rating": {
+      "value": "4.5",
+      "voterCount": "3"
+    }
   }
 ]

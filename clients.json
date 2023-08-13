@@ -1,1 +1,12 @@
-[{"id": "H0k57UpHxJaVHC1hV83n0fl7yyx1", "firstName": "Maria", "lastName": "Popescu", "email": "mariapop@gmail.com", "password": "mariapass", "username": "maria_popescu", "phoneNumber": "071221221", "deviceToken": "dMWUIQBBQpakEgYqa9v7-1:APA91bHjaaNBqO1eeqJndyNR5QGGRUg5MqOTe4lve2ef6qASxVv_vGn2wBSg4tlULJSoJ68882rIbRgLUHhcIgrw2pPZgs3vcd7811nsVc-rNxCGWH5ORi4cEl_yRRYHIFK2JpmkqpTh"}]
+[
+  {
+    "id": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "firstName": "Maria",
+    "lastName": "Popescu",
+    "email": "mariapop@gmail.com",
+    "password": "mariapass",
+    "username": "maria_popescu",
+    "phoneNumber": "071221221",
+    "deviceToken": "dMWUIQBBQpakEgYqa9v7-1:APA91bHjaaNBqO1eeqJndyNR5QGGRUg5MqOTe4lve2ef6qASxVv_vGn2wBSg4tlULJSoJ68882rIbRgLUHhcIgrw2pPZgs3vcd7811nsVc-rNxCGWH5ORi4cEl_yRRYHIFK2JpmkqpTh"
+  }
+]

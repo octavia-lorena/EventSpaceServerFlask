@@ -214,8 +214,8 @@ def rate_post(id):
             new_rating = post.get("rating")
             old_count = int(new_rating["voterCount"])
             new_rating["voterCount"] = str((int(new_rating["voterCount"]) + 1))
-            new_rating["value"] = str(
-                (float(new_rating["value"]) * old_count + int(new_value)) / int(new_rating["voterCount"]))
+            new_rating["value"] = str(round(
+                ((float(new_rating["value"]) * old_count + int(new_value)) / int(new_rating["voterCount"])), 1))
             updated_post = {"id": post.get("id"),
                             "businessId": post.get("businessId"),
                             "title": post.get("title"),

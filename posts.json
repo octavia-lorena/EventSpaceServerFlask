@@ -49,12 +49,10 @@
     "title": "Test Post",
     "description": "Test1 description more",
     "price": 200,
-    "images": [
-      "content://com.android.providers.media.documents/document/image%3A35"
-    ],
+    "images": [],
     "rating": {
-      "value": "4.375",
-      "voterCount": "4"
+      "value": "4.0",
+      "voterCount": "6"
     }
   },
   {
@@ -63,12 +61,10 @@
     "title": "Test Post2",
     "description": "Test2 description long blabla",
     "price": 111,
-    "images": [
-      "content://com.android.providers.media.documents/document/image%3A35"
-    ],
+    "images": [],
     "rating": {
-      "value": "4.5",
-      "voterCount": "3"
+      "value": "4.1",
+      "voterCount": "4"
     }
   },
   {
@@ -77,12 +73,57 @@
     "title": "Test Post3",
     "description": "Test2 description long blabla",
     "price": 111,
-    "images": [
-      "content://com.android.providers.media.documents/document/image%3A35"
-    ],
+    "images": [],
     "rating": {
       "value": "4.5",
       "voterCount": "3"
+    }
+  },
+  {
+    "id": 7,
+    "businessId": "SrjjuuIevANOmCBvDPQhFe5MnJo2",
+    "title": "New Test Post",
+    "description": "New test post description",
+    "price": 1234,
+    "images": [
+      "1691834891986.jpeg",
+      "1691834893569.jpeg",
+      "1691834895193.jpeg",
+      "1691834896809.jpeg"
+    ],
+    "rating": {
+      "value": "0.0",
+      "voterCount": "0"
+    }
+  },
+  {
+    "id": 8,
+    "businessId": "SrjjuuIevANOmCBvDPQhFe5MnJo2",
+    "title": "New Test Post 2",
+    "description": "Newww aaa ssss qqqq eee",
+    "price": 1111,
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/eventspace-24f7d.appspot.com/o/images%2Fposts%2FSrjjuuIevANOmCBvDPQhFe5MnJo2%2F1691838030281.jpeg?alt=media&token=19adb2f4-c489-4c73-b32c-d5028abc2186"
+    ],
+    "rating": {
+      "value": "0.0",
+      "voterCount": "0"
+    }
+  },
+  {
+    "id": 9,
+    "businessId": "SrjjuuIevANOmCBvDPQhFe5MnJo2",
+    "title": "Newww",
+    "description": "Newdasffsfagfrhg g fgdgsfsf Newdasffsfagfrhg g fgdgsfsfNewdasffsfagfrhg g fgdgsfsfNewdasffsfagfrhg g fgdgsfsfNewdasffsfagfrhg g fgdgsfsfNewdasffsfagfrhg g fgdgsfsfNewdasffsfagfrhg g fgdgsfsfNewdasffsfagfrhg g fgdgsfsfNewdasffsfagfrhg g fgdgsfsf",
+    "price": 122,
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/eventspace-24f7d.appspot.com/o/images%2Fposts%2FSrjjuuIevANOmCBvDPQhFe5MnJo2%2F1691838598076.jpeg?alt=media&token=c1da6e38-35df-4a96-8162-c986ded88224",
+      "https://firebasestorage.googleapis.com/v0/b/eventspace-24f7d.appspot.com/o/images%2Fposts%2FSrjjuuIevANOmCBvDPQhFe5MnJo2%2F1691838602407.jpeg?alt=media&token=66a4faf0-b93c-4c25-a307-671d470aa252",
+      "https://firebasestorage.googleapis.com/v0/b/eventspace-24f7d.appspot.com/o/images%2Fposts%2FSrjjuuIevANOmCBvDPQhFe5MnJo2%2F1691838605854.jpeg?alt=media&token=ead1b5d6-0010-4d73-8316-3822dd34e647"
+    ],
+    "rating": {
+      "value": "0.0",
+      "voterCount": "0"
     }
   }
 ]

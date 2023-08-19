@@ -7,6 +7,36 @@
     "password": "mariapass",
     "username": "maria_popescu",
     "phoneNumber": "071221221",
+    "deviceToken": "dyxCFglxSAaSTHxiMa9CM3:APA91bFrkH8RXZkGJXP2Ew13N0-hIcAI_CDd7g7JTX8Jh2bTVgKIeV66HUzh62zqF3w5oGHRRYZVz9oaayEtdMJ25OtzQnZ_GE7lT22ZXxxH8gbMqon2qEAJL4Y-yyPCpEEzYn_xnblZ"
+  },
+  {
+    "id": "mcNVkVPXeSdLhlUI6DyC25hcpKo2",
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "john@gmail.com",
+    "password": "johnpass",
+    "username": "john_smith",
+    "phoneNumber": "0711111111",
+    "deviceToken": "dMWUIQBBQpakEgYqa9v7-1:APA91bHjaaNBqO1eeqJndyNR5QGGRUg5MqOTe4lve2ef6qASxVv_vGn2wBSg4tlULJSoJ68882rIbRgLUHhcIgrw2pPZgs3vcd7811nsVc-rNxCGWH5ORi4cEl_yRRYHIFK2JpmkqpTh"
+  },
+  {
+    "id": "L5daM9wRl0WpoNYnHlk4ObAnFou2",
+    "firstName": "Sophia",
+    "lastName": "Andreson",
+    "email": "sophia@gmail.com",
+    "password": "sophiapass",
+    "username": "sophia_andreson",
+    "phoneNumber": "0723323322",
+    "deviceToken": "dMWUIQBBQpakEgYqa9v7-1:APA91bHjaaNBqO1eeqJndyNR5QGGRUg5MqOTe4lve2ef6qASxVv_vGn2wBSg4tlULJSoJ68882rIbRgLUHhcIgrw2pPZgs3vcd7811nsVc-rNxCGWH5ORi4cEl_yRRYHIFK2JpmkqpTh"
+  },
+  {
+    "id": "HE1EzRUuxWZC4eFrH5XRKldvdM52",
+    "firstName": "Lorena",
+    "lastName": "Miller",
+    "email": "lorena@gmail.com",
+    "password": "lorenapass",
+    "username": "lorena_miller",
+    "phoneNumber": "0743232111",
     "deviceToken": "dMWUIQBBQpakEgYqa9v7-1:APA91bHjaaNBqO1eeqJndyNR5QGGRUg5MqOTe4lve2ef6qASxVv_vGn2wBSg4tlULJSoJ68882rIbRgLUHhcIgrw2pPZgs3vcd7811nsVc-rNxCGWH5ORi4cEl_yRRYHIFK2JpmkqpTh"
   }
 ]

@@ -8,6 +8,8 @@ app = Flask(__name__)
 maxPostId = 0
 maxRequestId = 0
 maxEventId = 0
+maxClientId = 0
+maxBusinessId = 0
 
 
 def get_json_content(file_name):
@@ -86,11 +88,14 @@ def get_max_event_id():
 
 def get_max_request_id():
     global maxRequestId
-    table = get_json_content("requests.json.json")
+    table = get_json_content("requests.json")
     for post in table:
         currentId = int(post.get("id"))
         if currentId > maxRequestId:
             maxRequestId = currentId
+
+
+
 
 
 def generatePostId():
@@ -149,7 +154,6 @@ def add_post():
     # print(post.get("description"))
     posts = get_all_posts_from_json()
     if not existsPost(post.get("id")):
-        id = generatePostId()
         new_post = {"id": id,
                     "businessId": post.get("businessId"),
                     "title": post.get("title"),
@@ -435,6 +439,33 @@ def get_all_businesses_from_json():
     return requests
 
 
+@app.post('/business')
+def add_business():
+    business = request.json
+    businesses = get_all_businesses_from_json()
+    new_business = {}
+    if not exists_business(business.get("id")):
+        new_business = {
+            "id": business.get("id"),
+            "businessName": business.get("businessName"),
+            "email": business.get("email"),
+            "address": business.get("address"),
+            "businessType": business.get("businessType"),
+            "phoneNumber": business.get("phoneNumber"),
+            "lat": business.get("lat"),
+            "lng": business.get("lng"),
+            "username": business.get("username"),
+            "city": business.get("city"),
+            "password": business.get("password"),
+            "deviceToken": business.get("deviceToken"),
+            "profilePicture": business.get("profilePicture")
+        }
+        businesses.append(new_business)
+    with open("businesses.json", 'w') as f:
+        json.dump(businesses, f)
+    return json.dumps(business)
+
+
 @app.get('/business')
 def get_all_businesses():
     businesses = get_all_businesses_from_json()
@@ -486,17 +517,6 @@ def exists_business(id):
     return False
 
 
-@app.post('/business')
-def add_business():
-    business = request.json
-    businesses = get_all_businesses_from_json()
-    if not exists_business(business.get("id")):
-        businesses.append(business)
-    with open("businesses.json", 'w') as f:
-        json.dump(businesses, f)
-    return json.dumps(business)
-
-
 @app.delete('/business/<id>')
 def delete_business(id):
     businesses = get_all_businesses_from_json()
@@ -529,7 +549,8 @@ def update_device_token(id):
                 "username": business.get("username"),
                 "city": business.get("city"),
                 "password": business.get("password"),
-                "deviceToken": new_token
+                "deviceToken": new_token,
+                "profilePicture": business.get("profilePicture")
             }
             businesses[i] = updated_business
             break
@@ -567,7 +588,7 @@ def get_client_by_id(id):
 
 
 def exists_client(id):
-    clients = get_appointments_by_client_id()
+    clients = get_all_clients_from_json()
     for business in clients:
         if business.get("id") == id:
             return True
@@ -578,8 +599,19 @@ def exists_client(id):
 def add_client():
     client = request.json
     clients = get_all_clients_from_json()
+    new_client = {}
     if not exists_client(client.get("id")):
-        clients.append(client)
+        new_client = {
+            "id": client.get("id"),
+            "firstName": client.get("firstName"),
+            "lastName": client.get("lastName"),
+            "email": client.get("email"),
+            "password": client.get("password"),
+            "username": client.get("username"),
+            "phoneNumber": client.get("phoneNumber"),
+            "deviceToken": client.get("deviceToken")
+        }
+        clients.append(new_client)
     with open("clients.json", 'w') as f:
         json.dump(clients, f)
     return json.dumps(client)

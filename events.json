@@ -124,8 +124,8 @@
     "vendors": {
       "Venue": 1,
       "PhotoVideo": -1,
-      "CakeShop": -1,
-      "Musician": 2,
+      "Catering": -1,
+      "Music": 2,
       "Florist": -1
     },
     "cost": 389,
@@ -144,8 +144,8 @@
     "vendors": {
       "Venue": 1,
       "PhotoVideo": 5,
-      "CakeShop": 5,
-      "Musician": -1,
+      "Catering": 5,
+      "Music": -1,
       "Florist": -1
     },
     "cost": 111,
@@ -164,9 +164,79 @@
     "vendors": {
       "Venue": -1,
       "PhotoVideo": -1,
-      "CakeShop": -1
+      "Catering": -1
     },
     "cost": 200,
+    "status": "Planning"
+  },
+  {
+    "id": 13,
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "type": "Party",
+    "name": "Fotbal",
+    "description": "Fotbal cu Lorena fotbalista",
+    "guestNumber": 2,
+    "budget": 100,
+    "date": "2023-08-20",
+    "time": "23:00",
+    "vendors": {
+      "Entertainment": -1
+    },
+    "cost": 0,
+    "status": "Planning"
+  },
+  {
+    "id": 14,
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "type": "Birthday",
+    "name": "Birthday party ",
+    "description": "My birthday is on 24 August ",
+    "guestNumber": 2,
+    "budget": 2000,
+    "date": "2023-08-24",
+    "time": "15:45",
+    "vendors": {
+      "Venue": -1,
+      "PhotoVideo": 9,
+      "Music": -1
+    },
+    "cost": 122,
+    "status": "Planning"
+  },
+  {
+    "id": 15,
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "type": "Party",
+    "name": "Masa",
+    "description": "Masa buna cu pepsi mare",
+    "guestNumber": 34,
+    "budget": 6222,
+    "date": "2023-08-24",
+    "time": "15:00",
+    "vendors": {
+      "PhotoVideo": -1,
+      "Music": -1,
+      "Entertainment": -1
+    },
+    "cost": 0,
+    "status": "Planning"
+  },
+  {
+    "id": 17,
+    "organizerId": "H0k57UpHxJaVHC1hV83n0fl7yyx1",
+    "type": "Party",
+    "name": "Tetstetstest",
+    "description": "Ttetstetstetstetstets",
+    "guestNumber": 111,
+    "budget": 111,
+    "date": "2023-08-15",
+    "time": "12:00",
+    "vendors": {
+      "PhotoVideo": -1,
+      "Catering": -1,
+      "Music": -1
+    },
+    "cost": 0,
     "status": "Planning"
   }
 ]

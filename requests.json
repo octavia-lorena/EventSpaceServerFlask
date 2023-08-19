@@ -22,5 +22,17 @@
     "eventId": 10,
     "postId": 4,
     "status": "Pending"
+  },
+  {
+    "id": 16,
+    "eventId": 10,
+    "postId": 9,
+    "status": "Pending"
+  },
+  {
+    "id": 17,
+    "eventId": 14,
+    "postId": 9,
+    "status": "Accepted"
   }
 ]

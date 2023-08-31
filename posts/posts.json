@@ -35,8 +35,8 @@
     "id": 3,
     "businessId": "eyd5KJ2hooV6FG3JXJ6819lKS6m1",
     "title": "Skyline Panoramic",
-    "description": "",
-    "price": 3000,
+    "description": "Enjoy your special event from the highest building in the city! ",
+    "price": 4000,
     "images": [
       "https://www.bridalguide.com/sites/default/files/article-images/destination-weddings/city-views/hotel-eventi.jpg",
       "https://cdn0.weddingwire.com/vendor/563257/3_2/960/jpg/1438810307345-loft-terrace-dinner.webp",
@@ -51,7 +51,7 @@
     "id": 4,
     "businessId": "eyd5KJ2hooV6FG3JXJ6819lKS6m1",
     "title": "Waterside Urban View",
-    "description": "",
+    "description": "Enjoy the breathtaking view of the city. Maximum capacity of 300.",
     "price": 3000,
     "images": [
       "https://www.worldclassweddingvenues.com/Images/worldclassweddingvenues/User_2092070/Venue_4022/2.jpg",
@@ -1238,6 +1238,22 @@
       "https://webbabyshower.com/wp-content/uploads/2022/10/safari-balloon-garland-kit.webp",
       "https://webbabyshower.com/wp-content/uploads/2022/10/dusty-rose-boho-balloon-garland-kit.webp",
       "https://marketplace.canva.com/EAFPPITwuV8/1/0/1143w/canva-greenery-safari-baby-shower-invitation-QX116yi-Lsc.jpg"
+    ],
+    "rating": {
+      "value": "0.0",
+      "voterCount": "0"
+    }
+  },
+  {
+    "id": 77,
+    "businessId": "eyd5KJ2hooV6FG3JXJ6819lKS6m1",
+    "title": "Garden Venue",
+    "description": "Emerge into a magnificent garden that will remind youof",
+    "price": 2110,
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/eventspace-24f7d.appspot.com/o/images%2Fposts%2Feyd5KJ2hooV6FG3JXJ6819lKS6m1%2F1693494696576.jpeg?alt=media&token=90f3fc8c-8f05-48de-bd9e-33c36d86bd02",
+      "https://firebasestorage.googleapis.com/v0/b/eventspace-24f7d.appspot.com/o/images%2Fposts%2Feyd5KJ2hooV6FG3JXJ6819lKS6m1%2F1693494699619.jpeg?alt=media&token=ef79c44f-e88f-4993-8ce5-dc0b890f5973",
+      "https://firebasestorage.googleapis.com/v0/b/eventspace-24f7d.appspot.com/o/images%2Fposts%2Feyd5KJ2hooV6FG3JXJ6819lKS6m1%2F1693494702556.jpeg?alt=media&token=3974153b-e686-4f8b-940f-3e58f5ff0509"
     ],
     "rating": {
       "value": "0.0",

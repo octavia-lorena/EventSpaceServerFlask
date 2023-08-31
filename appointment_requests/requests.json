@@ -6,12 +6,6 @@
     "status": "Pending"
   },
   {
-    "eventId": 7,
-    "id": 19,
-    "postId": 7,
-    "status": "Accepted"
-  },
-  {
     "eventId": 6,
     "id": 20,
     "postId": 24,
@@ -99,6 +93,24 @@
     "eventId": 3,
     "id": 36,
     "postId": 52,
+    "status": "Accepted"
+  },
+  {
+    "eventId": 4,
+    "id": 37,
+    "postId": 4,
+    "status": "Accepted"
+  },
+  {
+    "eventId": 14,
+    "id": 38,
+    "postId": 8,
+    "status": "Pending"
+  },
+  {
+    "eventId": 14,
+    "id": 39,
+    "postId": 7,
     "status": "Accepted"
   }
 ]

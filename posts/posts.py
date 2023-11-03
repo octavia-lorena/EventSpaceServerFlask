@@ -14,13 +14,13 @@ def get_posts_by_id(businessId):
     return posts
 
 
-def get_post_by_id(id):
+def get_post_by_id_file(id):
     table = get_json_content(posts_file_name)
     if len(table) == 0:
         return []
     posts = []
     for post in table:
-        if post.get("id") == id:
+        if int(post.get("id")) == int(id):
             posts.append(post)
     return posts
 
@@ -58,7 +58,7 @@ def get_all_posts(businessId):
 
 @app.get('/post/<id>')
 def get_post_by_id(id):
-    posts = get_posts_by_id(id)
+    posts = get_post_by_id_file(id)
     if len(posts) == 0:
         return json.dumps({})
     return json.dumps(posts[0])
